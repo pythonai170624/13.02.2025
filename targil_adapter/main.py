@@ -11,4 +11,3 @@ if __name__ == "__main__":
     print_factorial_number(FactorialCalculator(), 5)
     print_factorial_number(FactorialCalculator(), 3.0)
 
-    # print_factorial_number(AdapterFloat2Int(), 3.0)
