@@ -1,0 +1,7 @@
+Product,Region,Sales,Quantity
+Phone,North,5000,25
+Laptop,South,8000,30
+Tablet,East,3000,20
+Phone,West,5500,27
+Laptop,North,8500,35
+Tablet,South,,15
