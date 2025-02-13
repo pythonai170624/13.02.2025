@@ -2,7 +2,7 @@ from typing import override
 
 from salad_builder import SaladBuilder
 
-class TunaSaladBuilder(SaladBuilder):
+class PokiballSaladBuilder(SaladBuilder):
 
     def __init__(self):
         super().__init__()
@@ -12,8 +12,10 @@ class TunaSaladBuilder(SaladBuilder):
         self.get_salad().prepare_vegg("Tomato and cucumber")
 
     @override
-    def prepare_main(self):
-        self.get_salad().prepare_main("Tuna lots of tuna")
+    def prepare_main(self, **kwargs):
+        # kwargs == fish type
+
+        self.get_salad().prepare_main(f"lots of {kwargs.get('fish_type', '--missing--')}")
 
     @override
     def prepare_graving(self):

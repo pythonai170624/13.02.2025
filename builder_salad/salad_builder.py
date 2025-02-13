@@ -11,10 +11,10 @@ class SaladBuilder(ABC):
         return self.__salad
 
     @final
-    def build_salad(self):
+    def build_salad(self, **kwargs):
         self.__salad = Salad()  # 1
         self.prepare_vegg()  # 2
-        self.prepare_main()  # 3
+        self.prepare_main(**kwargs)  # 3
         self.prepare_graving()  # 4
         self.prepare_price()  # 5
         return self
@@ -24,7 +24,7 @@ class SaladBuilder(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def prepare_main(self):
+    def prepare_main(self, **kwargs):
         raise NotImplementedError
 
     @abstractmethod

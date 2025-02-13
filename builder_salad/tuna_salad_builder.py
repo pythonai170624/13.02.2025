@@ -9,7 +9,7 @@ class TunaSaladBuilder(SaladBuilder):
         self.get_salad().prepare_vegg("Tomato and cucumber")
 
     @override
-    def prepare_main(self):
+    def prepare_main(self, **kwargs):
         self.get_salad().prepare_main("Tuna lots of tuna")
 
     @override

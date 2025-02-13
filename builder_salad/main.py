@@ -1,4 +1,5 @@
 from builder_salad.halomi_salad_builder import HalomiSaladBuilder
+from builder_salad.pokiball_salad_builder import PokiballSaladBuilder
 from builder_salad.salad import Salad
 from tuna_salad_builder import TunaSaladBuilder
 
@@ -8,3 +9,6 @@ if __name__ == "__main__":
 
     halomi_salad: Salad = HalomiSaladBuilder().build_salad().get_salad()
     print(halomi_salad)
+
+    poki_ball_salad = PokiballSaladBuilder().build_salad().get_salad()
+    print(poki_ball_salad)
