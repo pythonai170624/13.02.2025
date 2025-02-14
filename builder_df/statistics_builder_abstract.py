@@ -1,8 +1,11 @@
 from abc import ABC, abstractmethod
 
+from builder_df.data_sample import DataSample
+
+
 class AbstractStatisticsBuilder(ABC):
-    def __init__(self, class_name, file_path):
-        self.data_sample = class_name(file_path)
+    def __init__(self, file_path):
+        self.data_sample = DataSample(file_path)
 
     @abstractmethod
     def load_data(self):
